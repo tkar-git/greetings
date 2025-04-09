@@ -16,7 +16,7 @@ int main(int argc, char *argv[]) {
     input = argv[1];
   } else {
     // if no arguments are passed, use the default message
-    input = "Hello, there!";
+    print("this is a different default message by Selina")
   }  
   print_utility_message(input);
   return 0;
