@@ -19,5 +19,5 @@ int main(int argc, char *argv[]) {
     input = "Hello, there!";
   }  
   print_utility_message(input);
-  return 0;
+  return 42;
 }
