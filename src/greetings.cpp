@@ -18,7 +18,7 @@ int main(int argc, char *argv[]) {
   
   } else {
     // if no arguments are passed, use the default message
-    print("this is a different default message by Selina")
+    
     input = "this is a different default message by Selina"
   }  
 
