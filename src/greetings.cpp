@@ -11,9 +11,9 @@ int main(int argc, char *argv[]) {
   // define arguments to be passed here:
   std::string input;
 
-  if(argc > 1) {
+  if(argc > 2) {
     // if there are arguments passed, use the first one
-    input = argv[1];
+    input = std::string(argv[1]) + " " + std::string(argv[2]);
   } else {
     // if no arguments are passed, use the default message
     input = "Hello, there!";
