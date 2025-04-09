@@ -16,8 +16,10 @@ int main(int argc, char *argv[]) {
     input = std::string(argv[1]) + " " + std::string(argv[2]);
   } else {
     // if no arguments are passed, use the default message
-    input = "Hello, there!";
+    
+    input = "this is a different default message by Selina"
   }  
+
   print_utility_message(input);
   return 42;
 }
