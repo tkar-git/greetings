@@ -14,10 +14,14 @@ int main(int argc, char *argv[]) {
   if(argc > 1) {
     // if there are arguments passed, use the first one
     input = argv[1];
+  
+  
   } else {
     // if no arguments are passed, use the default message
     print("this is a different default message by Selina")
+    input = "this is a different default message by Selina"
   }  
+
   print_utility_message(input);
   return 0;
 }
