@@ -15,16 +15,15 @@ jobs:
   job_2:
     runs-on: ubuntu-latest
     steps:
-      - name: compile and run
-        run: |
-          echo $(pwd)
-          ls -a
-          cd ..
-          ls -a
+    - name: checkout
+      uses: actions/checkout@v2
+    - name: Set up CMake
+      uses: lukka/get-cmake@latest
+    - name: compile and run
+      run: |
           mkdir build
           mkdir run
           cd build
-          echo $(pwd)
           cmake ../
           cmake --build .
           cd ../run
