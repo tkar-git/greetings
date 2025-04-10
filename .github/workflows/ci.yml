@@ -21,6 +21,6 @@ jobs:
       - name: Creating Cmake environment
         run: |
           mkdir build
-	  cd ./build
-	  cmake ..
-	  cmake --build .
+          cd ./build
+          cmake ..
+          cmake --build .
