@@ -12,3 +12,19 @@ jobs:
           echo "I hope you are having a great day!"
           echo "This is a test CI job."
           ls non-exisiting
+  jobs_2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test build and run
+        run : echo "testing build"
+      
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Set up CMake
+        uses: lukka/get-cmake@latest
+      - name: create  build dir. and navigate there
+        run: |
+          mkdir build
+          cd build 
+          cmake ../greetings
+          cmake --build .
