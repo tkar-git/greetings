@@ -18,7 +18,8 @@ jobs:
         uses: lukka/get-cmake@latest	
       - name: Checkout Code
         uses: actions/checkout@v4
-        run: |
+      - name: Creating Cmake environment
+	run: |
           mkdir build
 	  cd ./build
 	  cmake ..
