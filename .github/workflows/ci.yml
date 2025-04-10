@@ -1,4 +1,4 @@
- name: example_ci
+name: CI_Exercise1
 
 on: push
 
