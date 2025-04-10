@@ -18,6 +18,7 @@ jobs:
       - name: compile and run
         run: |
           echo $(pwd)
+          ls
           mkdir build
           mkdir run
           cd build
