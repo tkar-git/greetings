@@ -46,4 +46,5 @@ jobs:
     - name: run greetings
       run: |
           cd run
+          cd Release
           greetings.exe
