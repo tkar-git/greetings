@@ -4,6 +4,6 @@ jobs:
   greeting:
     runs-on: ubuntu-latest
     container:
-      image: docker pull tkardocker/docker-git-intro
+      image: tkardocker/docker-git-intro
     steps:
       - run: echo hello world
