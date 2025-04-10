@@ -29,3 +29,22 @@ jobs:
       run: |
           cd run
           ./greetings
+
+ compile-and-run-greetings-windows:
+    runs-on: windows-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@v2
+    - name: Set up CMake
+      uses: lukka/get-cmake@latest
+    - name: compile greetings
+      run: |
+          mkdir build
+          mkdir run
+          cd build
+          cmake ../
+          cmake --build . --config Release
+    - name: run greetings
+      run: |
+          cd run
+          greetings.exe
