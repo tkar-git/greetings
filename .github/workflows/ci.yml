@@ -11,7 +11,7 @@ jobs:
           echo "Hello there!"
           echo "I hope you are having a great day!"
           echo "This is a test CI job."
-          ls non-exisiting
+          
   jobs_2:
     runs-on: ubuntu-latest
     steps:
