@@ -1,9 +1,13 @@
-name: example
+name: example_ci
+
 on: push
+
 jobs:
-  greeting:
+  job_1:
     runs-on: ubuntu-latest
-    container:
-      image: tkardocker/docker-git-intro
     steps:
-      - run: echo hello world
+      - name: test CI
+        run: |
+          echo "Hello there!"
+          echo "I hope you are having a great day!"
+          echo "This is a test CI job."
