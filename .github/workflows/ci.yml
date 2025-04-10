@@ -1,11 +1,23 @@
-name: CI_Exercise1
+name: example_ci
 
 on: push
 
 jobs:
   job_1:
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
     steps:
       - name: test CI
         run: |
-	  echo "Hello there!"
+          echo "Hello there!"
+          echo "I hope you are having a great day!"
+          echo "This is a test CI job."	  
+  job_2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run CMake
+      uses: actions/checkout@v4
+        run: |
+          mkdir build
+	  cd ./build
+	  cmake ..
+	  cmake --build .
