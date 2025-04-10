@@ -27,5 +27,3 @@ You should have now successfully compiled and installed the `greetings` project
 ## Runing the code
 The compile and install steps creates a run directory in the same directory as `build_greetings`. To run 
 
-
-
