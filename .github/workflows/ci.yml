@@ -17,6 +17,7 @@ jobs:
     steps:
       - name: compile and run
         run: |
+          echo $(pwd)
           mkdir build
           mkdir run
           cd build
