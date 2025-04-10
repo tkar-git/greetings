@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
   }  
 
   print_utility_message(input);
-  return 42;
+  return 0;
 }
 
 /*
