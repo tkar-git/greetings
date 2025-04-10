@@ -28,3 +28,5 @@ jobs:
           cd ../build 
           cmake ../greetings
           cmake --build .
+          
+          ../run/greetings
