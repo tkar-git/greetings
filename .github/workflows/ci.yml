@@ -3,7 +3,7 @@ name: example_ci
 on: push
 
 jobs:
-  job_1:
+  hello-message:
     runs-on: ubuntu-latest
     steps:
       - name: test CI
@@ -11,19 +11,21 @@ jobs:
           echo "Hello there!"
           echo "I hope you are having a great day!"
           echo "This is a test CI job."
-  job_2:
+  compile-and-run-greetings:
     runs-on: ubuntu-latest
     steps:
     - name: checkout
       uses: actions/checkout@v2
     - name: Set up CMake
       uses: lukka/get-cmake@latest
-    - name: compile and run
+    - name: compile greetings
       run: |
           mkdir build
           mkdir run
           cd build
           cmake ../
           cmake --build .
+    - name: run greetings
+      run: |
           cd ../run
           ./greetings
