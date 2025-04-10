@@ -2,6 +2,6 @@ name: example
 on: push
 jobs:
   greeting:
-    runs-on: ubuntu-latest
+    runs-on: tkardocker/docker-git-intro
     steps:
       - run: echo hello world
