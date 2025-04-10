@@ -24,7 +24,7 @@ jobs:
         uses: lukka/get-cmake@latest
       - name: create  build dir. and navigate there
         run: |
-          mkdir build
-          cd build 
+          mkdir ../build
+          cd ../build 
           cmake ../greetings
           cmake --build .
