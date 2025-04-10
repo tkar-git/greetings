@@ -17,11 +17,11 @@ int main(int argc, char *argv[]) {
   } else {
     // if no arguments are passed, use the default message
     
-    input = "this is a different default message by Selina";
+    input = "this is a different default message by Selina; test";
   }  
 
   print_utility_message(input);
-  return 42;
+  return 0;
 }
 
 /*
