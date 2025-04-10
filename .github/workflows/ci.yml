@@ -22,6 +22,7 @@ jobs:
           mkdir build
           mkdir run
           cd build
+          echo $(pwd)
           cmake ../
           cmake --build .
           cd ../run
