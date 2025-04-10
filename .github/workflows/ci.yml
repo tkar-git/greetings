@@ -19,6 +19,8 @@ jobs:
         run: |
           echo $(pwd)
           ls -a
+          cd ..
+          ls -a
           mkdir build
           mkdir run
           cd build
