@@ -17,9 +17,22 @@ int main(int argc, char *argv[]) {
   } else {
     // if no arguments are passed, use the default message
     
-    input = "this is a different default message by Selina"
+    input = "this is a different default message by Selina";
   }  
 
   print_utility_message(input);
   return 42;
 }
+
+/*
+  / \
+ /   \    <----House
+/     \
+°______°
+|     |            //\\    <----Tree
+|     |           /||\\
+|     |          //||\\
+|     |            ||
+_______°°°°°°°°°°°°°°°°°°°°°°°°°°°
+*/
+
