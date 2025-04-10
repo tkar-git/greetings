@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/greetings.dir/src/greetings.cpp.o -o /home/user_wsl2/git-docker-tutorial/docker-exercise/run/greetings  libutils.a 
