@@ -11,3 +11,15 @@ jobs:
           echo "Hello there!"
           echo "I hope you are having a great day!"
           echo "This is a test CI job."
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Checkout code
+        uses: actions/checkout@v4   
+       
+       -name: Cmake roject
+        run: |
+          mkdir build_greetings
+          cd build_greetings
+          cmake ../greetings
+          cmake --build .s
