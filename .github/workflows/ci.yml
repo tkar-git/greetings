@@ -1,0 +1,11 @@
+ name: example_ci
+
+on: push
+
+jobs:
+  job_1:
+    runs-on: ubuntu_latest
+    steps:
+      - name: test CI
+        run: |
+	  echo "Hello there!"
